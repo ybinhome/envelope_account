@@ -84,3 +84,64 @@
 [38;5;37m[2020-03-24.00:46:04.724874 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps/envelope_account/192.168.0.115:envelope_account:18080
 [38;5;37m[2020-03-24.00:46:04.724924 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps/envelope_account/192.168.0.115:envelope_account:18080 | method DELETE 
 [38;5;37m[2020-03-24.00:46:04.724823 ][0m [31mERROR[0m http: Server closed
+[38;5;37m[2020-03-24.11:26:19.632697 ][0m [32m INFO[0m Initializing starters...
+[38;5;37m[2020-03-24.11:26:19.634285 ][0m [34mDEBUG[0m Initializing: type=%s*base.PropsStarter
+[38;5;37m[2020-03-24.11:26:19.634329 ][0m [32m INFO[0m 初始化配置
+[38;5;37m[2020-03-24.11:26:19.634368 ][0m [34mDEBUG[0m Initializing: type=%s*base.DbxDatabaseStarter
+[38;5;37m[2020-03-24.11:26:19.634387 ][0m [34mDEBUG[0m Initializing: type=%s*base.ValidatorStarter
+[38;5;37m[2020-03-24.11:26:19.634533 ][0m [34mDEBUG[0m Initializing: type=%s*infra.WebApiStarter
+[38;5;37m[2020-03-24.11:26:19.634553 ][0m [34mDEBUG[0m Initializing: type=%s*base.EurekaStarter
+[38;5;37m[2020-03-24.11:26:19.635031 ][0m [34mDEBUG[0m &{Leader:http://127.0.0.1:8761/eureka Machines:[http://127.0.0.1:8761/eureka]}
+[38;5;37m[2020-03-24.11:26:19.635066 ][0m [34mDEBUG[0m Initializing: type=%s*base.HookStarter
+[38;5;37m[2020-03-24.11:26:19.635131 ][0m [34mDEBUG[0m Initializing: type=%s*base.IrisServerStarter
+[38;5;37m[2020-03-24.11:26:19.635187 ][0m [32m INFO[0m Setup starters...
+[38;5;37m[2020-03-24.11:26:19.635251 ][0m [32m INFO[0m {DriverName:mysql User:po Password:111111 Database:po Host:localhost:3306 Options:map[charset:utf8 loc:Local parseTime:true] ConnMaxLifetime:0s MaxOpenConns:3 MaxIdleConns:1 LoggingEnabled:false}
+[38;5;37m[2020-03-24.11:26:19.635293 ][0m [32m INFO[0m mysql.conn url: po:***@tcp(localhost:3306)/po?charset=utf8&loc=Local&parseTime=true&
+[38;5;37m[2020-03-24.11:26:19.637875 ][0m [32m INFO[0m dial tcp 127.0.0.1:3306: connect: connection refused
+[38;5;37m[2020-03-24.11:26:19.638029 ][0m [32m INFO[0m Starting starters...
+[38;5;37m[2020-03-24.11:26:19.638052 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.PropsStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638070 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.DbxDatabaseStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638085 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.ValidatorStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638099 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *infra.WebApiStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638113 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.EurekaStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638127 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.HookStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638141 ][0m [32m INFO[0m[36m  Register Notify Stop:[0m : *base.IrisServerStarter.Stop()
+[38;5;37m[2020-03-24.11:26:19.638159 ][0m [32m INFO[0m[36m ./apis/web/account.go:26:[0m POST: /v1/account/create -> github.com/ybinhome/envelope_account/apis/web.createHandler() and 2 more
+[38;5;37m[2020-03-24.11:26:19.638176 ][0m [32m INFO[0m[36m ./apis/web/account.go:28:[0m POST: /v1/account/transfer -> github.com/ybinhome/envelope_account/apis/web.transferHandler() and 2 more
+[38;5;37m[2020-03-24.11:26:19.638191 ][0m [32m INFO[0m[36m ./../../gopath/pkg/mod/github.com/ybinhome/envelope_infra@v0.0.0-20200323162512-8f1177768e08/base/eureka.go:27:[0m GET: /info -> github.com/ybinhome/envelope_infra/base.(*EurekaStarter).Setup.func1() and 2 more
+[38;5;37m[2020-03-24.11:26:19.638214 ][0m [32m INFO[0m[36m ./../../gopath/pkg/mod/github.com/ybinhome/envelope_infra@v0.0.0-20200323162512-8f1177768e08/base/eureka.go:32:[0m GET: /health -> github.com/ybinhome/envelope_infra/base.(*EurekaStarter).Setup.func2() and 2 more
+[38;5;37m[2020-03-24.11:26:29.637433 ][0m [34mDEBUG[0m get http://127.0.0.1:8761/eurekaapps
+[38;5;37m[2020-03-24.11:26:29.637592 ][0m [34mDEBUG[0m get apps [http://127.0.0.1:8761/eureka]
+[38;5;37m[2020-03-24.11:26:29.637634 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps
+[38;5;37m[2020-03-24.11:26:29.637662 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps | method GET 
+[38;5;37m[2020-03-24.11:26:29.639055 ][0m [34mDEBUG[0m recv.response.from http://127.0.0.1:8761/eureka/apps
+[38;5;37m[2020-03-24.11:26:29.639231 ][0m [34mDEBUG[0m recv.success http://127.0.0.1:8761/eureka/apps 200 
+[38;5;37m[2020-03-24.11:26:29.639939 ][0m [34mDEBUG[0m post http://127.0.0.1:8761/eurekaapps/envelope_account, [{"instance":{"hostName":"172.32.106.226","homePageUrl":"http://172.32.106.226:18080/","statusPageUrl":"http://172.32.106.226:18080/info","healthCheckUrl":"http://172.32.106.226:18080/health","app":"envelope_account","ipAddr":"172.32.106.226","vipAddress":"envelope_account","status":"STARTING","port":{"$":18080,"@enabled":true},"dataCenterInfo":{"name":"MyOwn","@class":"com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo"},"leaseInfo":{"evictionDurationInSecs":30,"renewalIntervalInSecs":10,"durationInSecs":90,"registrationTimestamp":1585020379634,"lastRenewalTimestamp":1585020379634},"metadata":{"instanceId":"172.32.106.226:envelope_account:18080"},"instanceId":"172.32.106.226:envelope_account:18080","appName":"envelope_account"}}]
+[38;5;37m[2020-03-24.11:26:29.639977 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps/envelope_account
+[38;5;37m[2020-03-24.11:26:29.639998 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps/envelope_account | method POST 
+[38;5;37m[2020-03-24.11:26:29.641547 ][0m [34mDEBUG[0m recv.response.from http://127.0.0.1:8761/eureka/apps/envelope_account
+[38;5;37m[2020-03-24.11:26:29.641612 ][0m [34mDEBUG[0m recv.success http://127.0.0.1:8761/eureka/apps/envelope_account 204 
+[38;5;37m[2020-03-24.11:26:29.641639 ][0m [32m INFO[0m RegisterInstance  [32mbody[0m={"instance":{"hostName":"172.32.106.226","homePageUrl":"http://172.32.106.226:18080/","statusPageUrl":"http://172.32.106.226:18080/info","healthCheckUrl":"http://172.32.106.226:18080/health","app":"envelope_account","ipAddr":"172.32.106.226","vipAddress":"envelope_account","status":"STARTING","port":{"$":18080,"@enabled":true},"dataCenterInfo":{"name":"MyOwn","@class":"com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo"},"leaseInfo":{"evictionDurationInSecs":30,"renewalIntervalInSecs":10,"durationInSecs":90,"registrationTimestamp":1585020379634,"lastRenewalTimestamp":1585020379634},"metadata":{"instanceId":"172.32.106.226:envelope_account:18080"},"instanceId":"172.32.106.226:envelope_account:18080","appName":"envelope_account"}} [32mpath[0m=apps/envelope_account [32mstatus[0m=204
+[38;5;37m[2020-03-24.11:26:29.641668 ][0m [34mDEBUG[0m put http://127.0.0.1:8761/eurekaapps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP, []
+[38;5;37m[2020-03-24.11:26:29.641687 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP
+[38;5;37m[2020-03-24.11:26:29.641706 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP | method PUT 
+[38;5;37m[2020-03-24.11:26:29.642606 ][0m [34mDEBUG[0m recv.response.from http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP
+[38;5;37m[2020-03-24.11:26:29.642639 ][0m [34mDEBUG[0m recv.success http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP 200 
+[38;5;37m[2020-03-24.11:26:29.642670 ][0m [32m INFO[0m UpdateStatus  [32mpath[0m=apps/envelope_account/172.32.106.226:envelope_account:18080/status?value=UP [32mstatus[0m=200
+[38;5;37m[2020-03-24.11:26:39.635025 ][0m [34mDEBUG[0m get http://127.0.0.1:8761/eurekaapps
+[38;5;37m[2020-03-24.11:26:39.635099 ][0m [34mDEBUG[0m get apps [http://127.0.0.1:8761/eureka]
+[38;5;37m[2020-03-24.11:26:39.635126 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps
+[38;5;37m[2020-03-24.11:26:39.635164 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps | method GET 
+[38;5;37m[2020-03-24.11:26:39.635831 ][0m [34mDEBUG[0m recv.response.from http://127.0.0.1:8761/eureka/apps
+[38;5;37m[2020-03-24.11:26:39.635996 ][0m [34mDEBUG[0m recv.success http://127.0.0.1:8761/eureka/apps 200 
+[38;5;37m[2020-03-24.11:26:39.636318 ][0m [34mDEBUG[0m put http://127.0.0.1:8761/eurekaapps/envelope_account/172.32.106.226:envelope_account:18080, []
+[38;5;37m[2020-03-24.11:26:39.636350 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps/envelope_account/172.32.106.226:envelope_account:18080
+[38;5;37m[2020-03-24.11:26:39.636371 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080 | method PUT 
+[38;5;37m[2020-03-24.11:26:39.636869 ][0m [34mDEBUG[0m recv.response.from http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080
+[38;5;37m[2020-03-24.11:26:39.636911 ][0m [34mDEBUG[0m recv.success http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080 200 
+[38;5;37m[2020-03-24.11:26:39.636937 ][0m [32m INFO[0m SendHeartbeat  [32mpath[0m=apps/envelope_account/172.32.106.226:envelope_account:18080 [32mstatus[0m=200
+[38;5;37m[2020-03-24.11:26:43.610527 ][0m [32m INFO[0m handle signal:  [32msignal[0m=interrupt
+[38;5;37m[2020-03-24.11:26:43.610644 ][0m [34mDEBUG[0m delete http://127.0.0.1:8761/eurekaapps/envelope_account/172.32.106.226:envelope_account:18080
+[38;5;37m[2020-03-24.11:26:43.610685 ][0m [34mDEBUG[0m Connecting to eureka: attempt 1 for apps/envelope_account/172.32.106.226:envelope_account:18080
+[38;5;37m[2020-03-24.11:26:43.610761 ][0m [34mDEBUG[0m send.request.to http://127.0.0.1:8761/eureka/apps/envelope_account/172.32.106.226:envelope_account:18080 | method DELETE 
+[38;5;37m[2020-03-24.11:26:43.610616 ][0m [31mERROR[0m http: Server closed

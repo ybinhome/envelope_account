@@ -11,6 +11,5 @@ require (
 	github.com/smartystreets/goconvey v0.0.0-20190306220146-200a235640ff
 	github.com/tietang/dbx v1.0.1
 	github.com/tietang/props v2.2.0+incompatible
-	github.com/ybinhome/envelope v0.0.0-20200322154356-d1c679592b92
-	github.com/ybinhome/envelope_infra v0.0.0-20200323143615-2a6a7fd8aae8
+	github.com/ybinhome/envelope_infra v0.0.0-20200323162512-8f1177768e08
 )
